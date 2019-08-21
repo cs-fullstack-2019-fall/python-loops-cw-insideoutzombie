@@ -26,3 +26,21 @@ userInput2 = input("Enter 2nd numb ")
 userInput3 = input("Enter 3rd numb ")
 print(userInput1,"+", userInput2,"+", userInput3, "=",
 (userInput1+int(userInput2)+int(userInput3)))
+
+# Password Checker - Ask the user to enter a password.
+# Ask them to confirm the password.
+# If it's not equal, keep asking until it's
+# correct or they enter 'Q' to quit.
+userPassword = input("Enter a password ")
+userPassword2 = input("Reenter the passwrod")
+if(userPassword==userPassword2):
+    print("They match")
+    flag = ""
+    while flag != 'x':
+        flag = input('Enter something')
+        print(flag)
+        if flag == 'q':
+            print('that doesnt work here')
+
+else:
+    print("Incorrect")
